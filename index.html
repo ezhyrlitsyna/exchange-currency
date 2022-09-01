@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>Currency Exchange</title>
+</head>
+<body>
+    <section>
+        <header> 
+            <div id="logo">
+                <img class="logo" src="https://static.vecteezy.com/system/resources/previews/007/543/012/original/a-skillfully-crafted-doodle-icon-of-currency-exchange-vector.jpg" width="100px" alt="icon">
+                <h1>Currency exchange</h1>
+            </div>
+            
+            <hr>
+            <div id="currentRate">
+            <div class="rate">
+                <p>EUR</p>
+                <div><div id="euroBuy"></div>/</div>
+                <div><div id="euroSale"></div></div>
+            </div>
+            <div class="rate">
+                <p>USD</p>
+                <div><div id="dollarBuy"></div>/</div>
+                <div><div id="dollarSale"></div></div>
+            </div>
+        </div>
+        </header>  
+        <main>
+            <div class="exchange" >
+                <div class="custom-select" id="1s"> 
+                <select name="currency" id="select1">
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                </select>
+            </div>
+            <input type="text" id="input1">
+            </div>
+            <div class="image">
+                <button class="arrows"></button>
+            </div>
+            <div class="exchange" >
+                <div class="custom-select" id="2s">
+                <select name="currency" id="select2">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UAH" selected>UAH</option>
+                </select>
+            </div>
+            <input type="text" id="input2"> 
+            </div>
+        </main>
+    </section>
+<script src="./script.js"> 
+</script>
+</body>
+</html>

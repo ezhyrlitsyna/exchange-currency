@@ -1,0 +1,217 @@
+html{
+    height: 100%;
+    background: linear-gradient(270deg, rgba(222, 81, 10, 0.88) 0%, #fcc8ae 100%);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(21, 22, 25);
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin-top: 100px;
+}
+section{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(222, 81, 10, 0.88);
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 3px rgb(21, 22, 25);
+    
+}
+header{
+    position: relative;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: 70px;
+    width: auto;
+}
+h1{
+    font-size: 60px;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 6px #fcfcfc,2px 2px 2px rgb(163, 58, 5);
+    padding-top: 15px;
+    margin: 0;
+}
+hr{
+    border: 3px solid #F47119;
+}
+#currentRate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+}
+.rate{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid  #F47119;
+   
+}
+.rate p{
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    
+    
+}
+.rate > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+input{
+    width: 250px;
+    height: 60px;
+    display: block;
+    border: 1px solid #F47119;
+    border-radius: 8px;
+    margin-top: 16px;
+    box-shadow: 0 0 2px rgb(21, 22, 25);
+}
+.custom-select {
+    width: 250px;
+    position: relative;
+    font-family: Arial;
+  }
+  
+.custom-select select {
+   display: none;
+}
+
+.select-selected {
+
+    text-align: center;
+    border-radius: 8px;
+    background-color: #F47119;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+.select-items div,.select-selected {
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+.select-items {
+    border-radius: 8px;
+    position: absolute;
+    background-color: #F47119;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.select-items > div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.exchange{
+    margin-top: 100px;
+    padding: 20px;
+}
+.arrows{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #F47119;
+    border-radius: 130px;
+    background-image: url("../images/arrow.png");
+    background-size: 100px 100px;
+}
+.arrows:hover{
+    opacity: 0.5;
+    box-shadow: 0 0 5px rgb(21, 22, 25);
+}
+.image{
+margin-top: 100px;
+padding: 20px;
+}
+@media (max-width:810px) {
+    h1{
+        font-size: 48px;
+
+    }
+    section{
+        width: 100%;
+        min-width: 250px;
+    }
+    input, .custom-select{
+        width: 100%;
+    }
+}
+@media(max-width:670px){
+    h1{
+        font-size: 40px;
+    }
+}
+@media (max-width:600px) {
+    .logo{
+        display: none;
+    }
+    
+}
+@media (max-width:450px) {
+    .rate{
+        font-size: 16px;
+        font-weight: bold;
+        width: 150px;
+    }
+    .rate p{
+        font-size: 12px;
+    }
+    .arrows{
+        height: 50px;
+        width: 50px;
+        border: 1px solid #F47119;
+        border-radius: 70px;
+        background-size: 50px 50px;
+        }
+        .image{
+            padding: 20px 2px ;
+        }
+        .exchange{
+            padding: 20px 5px;
+        }
+}
